@@ -4,7 +4,7 @@
 The provided Docker Compose file allows to run the demo locally. To start, run:
 
 ```
-docker-compose up --build
+docker compose up --build
 ```
 
 You can test the application by navigating to:

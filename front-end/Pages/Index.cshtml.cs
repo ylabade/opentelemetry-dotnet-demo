@@ -16,8 +16,8 @@ namespace FrontEnd.Pages
 
         public IndexModel(ILogger<IndexModel> logger, HttpClient httpClient)
         {
-            _logger = logger;
-            _httpClient = httpClient;
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
         }
 
         public async Task OnGet()
